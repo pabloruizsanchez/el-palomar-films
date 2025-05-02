@@ -1,0 +1,81 @@
+/* app.css */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: white !important;
+	color: black;
+	font-family: system-ui, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+/* Asegura que todos los elementos hereden fondo blanco */
+* {
+	box-sizing: border-box;
+	background-color: white;
+	color: inherit;
+}
+
+/* Elimina decoraciones y resetea elementos comunes */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img, video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Evita que cualquier componente use fondo con degradado */
+[class*="bg-gradient"], 
+[class*="gradient"], 
+[class*="background"] {
+	background-image: none !important;
+	background: white !important;
+}
+
+/* Si usas Tailwind, fuerza fondo blanco */
+body {
+	@apply bg-white text-black;
+}
+
+.legal-footer {
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: auto;
+}
+
+.legal-links {
+	display: flex;
+	gap: 2.5rem;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.legal-links a {
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.3s ease;
+}
+
+.legal-links a:hover {
+	opacity: 0.5;
+}
+
