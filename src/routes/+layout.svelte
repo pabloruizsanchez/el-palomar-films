@@ -1,74 +1,36 @@
 <script>
-	import Header from './Header.svelte';
-	import '../app.css';
+  import Header from './Header.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import '../app.css';
 
-	/** @type {{children: import('svelte').Snippet}} */
-	let { children } = $props();
+  let { children } = $props();
 </script>
 
 <div class="app">
-	<Header />
+  <Header />
 
-	<main>
-		{@render children()}
-	</main>
+  <main>
+    {@render children()}
+  </main>
 
-	
-<footer class="legal-footer">
-	<div class="legal-links">
-		<a href="/legal-notice">Legal Notice</a>
-		<a href="/privacy-policy">Privacy Policy</a>
-	</div>
-</footer>
-
-
-
-
+  <Footer />
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
 </style>
-
-
-
-
-
-
-
-
-
-

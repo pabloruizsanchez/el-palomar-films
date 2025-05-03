@@ -1,18 +1,8 @@
+<!-- src/routes/+page.svelte -->
 <script>
-  import VideoSlider from '../lib/components/VideoSlider.svelte';
+  import VideoSlider from '$lib/components/VideoSlider.svelte';
 </script>
 
-<main>
+<div class="w-full h-screen bg-black overflow-hidden">
   <VideoSlider />
-</main>
-
-
-<style>
-	main {
-		background-color: white;
-		margin: 0;
-		padding: 0;
-	}
-</style>
-
-
+</div>

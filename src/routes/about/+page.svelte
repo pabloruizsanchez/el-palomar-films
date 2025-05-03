@@ -11,9 +11,9 @@
   <!-- Texto descriptivo -->
   <div class="about-text">
     <p>
-      El Palomar Films is a creative studio based in Andalusia, working with honesty, sensitivity, and a strong personal vision.
+      El Palomar Films is a creative studio based in Seville and Berlin, working with honesty, sensitivity, and a strong personal vision.
       <br /><br />
-      We are not an agency. We are creators. We tell stories that connect with what’s real — with people, with emotions, and with the place we come from.
+      We are not an agency. We are creators. We tell stories that connect with what’s real — with people, with emotions, and with the place we come from, Andalusia.
       <br /><br />
       We believe in the power of well-crafted storytelling without artifice, with truth.
       From the South of Spain, we offer a new perspective on our culture — far from cliché, close to emotion.
@@ -24,10 +24,7 @@
     </p>
   </div>
 
-  <!-- Dirección de contacto -->
-  <div class="contact-info">
-    <a href="mailto:info@elpalomarfilms.com">info@elpalomarfilms.com</a>
-  </div>
+ 
 </div>
 
 <style>

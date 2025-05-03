@@ -1,112 +1,92 @@
 <script>
-	import logo from '$lib/images/logo.svg';
+	import logo from '$lib/images/logo-black.svg';
 </script>
 
-<footer class="footer">
-	<div class="footer-section logo">
-		<img src={logo} alt="El Palomar Films" />
-	</div>
+<footer>
+	<div class="footer-container">
+		<!-- Logo a la izquierda -->
+		<div class="footer-logo">
+			<img src={logo} alt="El Palomar Logo" />
+		</div>
 
-	<div class="footer-section contacts">
-		<div>
-			<strong>SEVILLA (HQ)</strong><br />
-			Calle Ejemplo 12<br />
-			Sevilla, Spain 41001<br />
-			+34 600 000 000<br />
-			<a href="mailto:info@elpalomarfilms.com">info@elpalomarfilms.com</a>
+		<!-- Info centrada -->
+		<div class="footer-info">
+			<div class="location">
+				<h2>Sevilla</h2>
+				<a href="mailto:info@elpalomarfilms.com">info@elpalomarfilms.com</a>
+				<p>+34 691 55 11 11</p>
+			</div>
+			<div class="location">
+				<h2>Berlin</h2>
+				<a href="mailto:hallo@elpalomarfilms.com">hallo@elpalomarfilms.com</a>
+				<p>+49 176 83200141</p>
+			</div>
 		</div>
-		<div>
-			<strong>GRANADA</strong><br />
-			Calle Otra 34<br />
-			Granada, Spain 18001<br />
-			<a href="mailto:granada@elpalomarfilms.com">granada@elpalomarfilms.com</a>
-		</div>
-		<div>
-			<strong>SHOP ENQUIRIES</strong><br />
-			<a href="mailto:shop@elpalomarfilms.com">shop@elpalomarfilms.com</a>
-		</div>
-	</div>
-
-	<div class="footer-section socials">
-		<ul>
-			<li><a href="#">INSTAGRAM</a></li>
-			<li><a href="#">TWITTER</a></li>
-			<li><a href="#">LINKEDIN</a></li>
-			<li><a href="#">FACEBOOK</a></li>
-		</ul>
-		<form on:submit|preventDefault>
-			<label for="email">Subscribe to our newsletter</label><br />
-			<input type="email" id="email" placeholder="EMAIL" />
-			<button type="submit">SUBMIT</button>
-		</form>
 	</div>
 </footer>
 
 <style>
-	.footer {
+	footer {
+		width: 100%;
+		padding: 2rem;
+		background: white;
+		color: black;
+		font-size: 0.9rem;
+	}
+
+	.footer-container {
 		display: flex;
 		justify-content: space-between;
-		padding: 4rem 2rem;
-		background: #f7f7f7;
-		color: #000;
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-size: 12px;
-		letter-spacing: 0.05em;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
-	.footer-section {
+	.footer-logo img {
+		width: 120px;
+		height: auto;
+		opacity: 0.9;
+	}
+
+	.footer-info {
+		display: flex;
+		justify-content: center;
+		gap: 4rem;
 		flex: 1;
-		padding: 0 1rem;
+		text-align: left;
 	}
 
-	.logo img {
-		max-width: 120px;
-	}
-
-	.contacts div {
-		margin-bottom: 1.5rem;
-	}
-
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
-	}
-
-	.socials ul {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 1.5rem 0;
-	}
-
-	.socials li {
+	.location h2 {
+		font-size: 0.9rem;
+		font-weight: bold;
+		text-transform: uppercase;
 		margin-bottom: 0.5rem;
 	}
 
-	form {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
+	.location a {
+		color: black;
+		text-decoration: underline;
+		display: block;
+		margin-bottom: 0.25rem;
 	}
 
-	input[type="email"] {
-		padding: 0.5rem;
-		border: 1px solid #ccc;
-		width: 100%;
-		font-size: 12px;
+	.location p {
+		margin: 0;
 	}
 
-	button {
-		align-self: flex-start;
-		background: none;
-		border: none;
-		color: inherit;
-		font-size: 12px;
-		letter-spacing: 0.05em;
-		cursor: pointer;
-		text-transform: uppercase;
+	@media (max-width: 768px) {
+		.footer-container {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		.footer-info {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			margin-top: 1.5rem;
+		}
 	}
 </style>
