@@ -66,7 +66,7 @@ export const videos = [
     title: 'Mira Festival',
   },
  {
-    id: '306329031',
+    id: '374741801',
     filename: 'MTV EMA Sevilla.mp4',
     thumb: 'thumb12.jpg',
     title: 'MTV Sevilla',

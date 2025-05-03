@@ -14,7 +14,7 @@
     { id: 9, localClip: '/videos/clip9.mp4', vimeoId: '543945718', title: 'Cuevas de Málaga - Turismo Costa del Sol', thumb: '/thumbs/thumb9.jpg' },
     { id: 10, localClip: '/videos/clip10.mp4', vimeoId: '337578620', title: 'The Fog - I am Dive', thumb: '/thumbs/thumb10.jpg' },
     { id: 11, localClip: '/videos/clip11.mp4', vimeoId: '306329031', title: 'Mira Festival', thumb: '/thumbs/thumb11.jpg' },
-    { id: 12, localClip: '/videos/clip12.mp4', vimeoId: '868534445', title: 'MTV EMA Sevilla', thumb: '/thumbs/thumb12.jpg' },
+    { id: 12, localClip: '/videos/clip12.mp4', vimeoId: '374741801', title: 'MTV EMA Sevilla', thumb: '/thumbs/thumb12.jpg' },
     { id: 13, localClip: '/videos/clip13.mp4', vimeoId: '452324511', title: 'Intro Farruquito', thumb: '/thumbs/thumb13.jpg' },
     { id: 14, localClip: '/videos/clip14.mp4', vimeoId: '611849823', title: 'Ioca Group - Future', thumb: '/thumbs/thumb14.jpg' }
   ];
