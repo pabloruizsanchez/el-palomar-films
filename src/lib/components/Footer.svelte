@@ -13,7 +13,7 @@
 		<div class="footer-info">
 			<div class="location">
 				<h2>Sevilla</h2>
-				<a href="mailto:info@elpalomarfilms.com">info@elpalomarfilms.com</a>
+				<a href="mailto:info@elpalomarfilms.com">hello@elpalomarfilms.com</a>
 				<p>+34 691 55 11 11</p>
 			</div>
 			<div class="location">
