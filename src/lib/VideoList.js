@@ -65,4 +65,20 @@ export const videos = [
     thumb: 'thumb11.jpg',
     title: 'Mira Festival',
   },
+ {
+    id: '306329031',
+    filename: 'MTV EMA Sevilla.mp4',
+    thumb: 'thumb12.jpg',
+    title: 'MTV Sevilla',
+  }, {
+    id: '452324511',
+    filename: 'Intro Farruquito.mp4',
+    thumb: 'thumb13.jpg',
+    title: 'Intro Farruquito',
+  }, {
+    id: '611849823',
+    filename: 'Future.mp4',
+    thumb: 'thumb14.jpg',
+    title: 'Ioca Group - Future',
+  },
 ];
